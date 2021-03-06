@@ -1,0 +1,230 @@
+body {
+  background-color: #0076c0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.carousel-item {
+  overflow: hidden;
+  width: 100%;
+  }
+
+.trivia-header {
+  display: flex;
+  background-color: #005690;
+  color: white;
+}
+
+.trivia-main {
+  margin: 0 10px 0 10px;
+  flex: 1;
+}
+
+.trivia-carousel-content {
+  width: 350px;
+}
+
+@media screen and (min-width: 480px) {
+  .trivia-carousel-content {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .trivia-carousel-content {
+    width: 600px;
+  }
+}
+
+.trivia-footer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 0 2% 0 2%;
+  background-color: #005690;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: space-between;
+}
+
+.main-content-center {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.footer-github-link {
+  text-align: end;
+  padding: 5px;
+}
+
+.category-container {
+  display: flex;
+  margin: auto;
+  width: 100%;
+}
+
+.square {
+  height: 75px;
+  width: 100%;
+  margin: 10px;
+}
+
+.square:hover {
+  border: 2px solid black;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 480px) {
+  .square {
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .square {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .square {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .square {
+    height: 175px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .square {
+    height: 200px;
+  }
+}
+
+
+.one {
+  background: url(../assets/sports.jpg);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.two {
+  background: url(../assets/entertainment.jpg);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.three {
+  background: url(../assets/history.jpg);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.four {
+  background: url(../assets/science.png);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.five {
+  background: url(../assets/geography.jpg);
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.category-title {
+  color: white;
+  background-color: #005690;
+  text-align: center;
+  font-size: 0.25rem;
+}
+
+@media screen and (min-width: 480px) {
+  .category-title {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .category-title {
+    font-size: 0.875rem;
+  }
+}
+
+.highlighted-category {
+  border: 2px solid black;
+}
+
+#question {
+  width: 100%;
+  padding: 30px;
+  background-color: #005690;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 2%;
+}
+
+#answer {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#answer ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#answer ul li {
+  width: 40%;
+  background-color: #005690;
+  padding: 15px;
+  text-align: center;
+  margin: 5px;
+}
+
+#scores {
+  display: flex;
+  width: 100%;
+  background-color: #005690;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+#player1, #player2 {
+  width: 100%;
+}
